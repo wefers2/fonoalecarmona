@@ -33,9 +33,15 @@
         }
         .whatsapp-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px; /* Mais discreto no mobile */
+            right: 20px;  /* Mais discreto no mobile */
             z-index: 100;
+        }
+        @media (min-width: 768px) {
+            .whatsapp-float {
+                bottom: 30px;
+                right: 30px;
+            }
         }
         /* Estilos do Carrossel */
         .testimonial-slide {
@@ -53,9 +59,9 @@
 </head>
 <body class="bg-soft text-slate-800 antialiased">
 
-    <!-- Botão WhatsApp Flutuante -->
-    <a href="https://api.whatsapp.com/send?phone=5511961910907&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20uma%20conversa" target="_blank" class="whatsapp-float bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-        <i class="fab fa-whatsapp text-3xl"></i>
+    <!-- Botão WhatsApp Flutuante (Ajustado para ser mais discreto no mobile) -->
+    <a href="https://api.whatsapp.com/send?phone=5511961910907&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20uma%20conversa" target="_blank" class="whatsapp-float bg-green-500 text-white p-3 md:p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+        <i class="fab fa-whatsapp text-xl md:text-2xl"></i>
     </a>
 
     <!-- Navegação (Simplificada - Sem botão superior) -->
@@ -65,7 +71,6 @@
                 <i class="fas fa-wave-square"></i>
                 <span>Alessandra Carmona</span>
             </div>
-            <!-- Botão removido conforme solicitado -->
         </div>
     </nav>
 
@@ -82,7 +87,7 @@
                 </p>
                 <div class="flex justify-center md:justify-start pt-4">
                     <a href="https://api.whatsapp.com/send?phone=5511961910907&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20uma%20conversa" target="_blank" class="bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-teal-200 hover:translate-y-[-2px] transition flex items-center gap-2">
-                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-whatsapp text-2xl"></i>
                         Falar com a fono Alessandra
                     </a>
                 </div>
